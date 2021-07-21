@@ -1,0 +1,19 @@
+{
+  "name": "ecmascript",
+  "version": "1.0.0",
+  "description": "Aprendiendo ECMAScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RamirezSebastianJ/ecmaScript.git"
+  },
+  "author": "Juan Sebastian Ramirez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RamirezSebastianJ/ecmaScript/issues"
+  },
+  "homepage": "https://github.com/RamirezSebastianJ/ecmaScript#readme"
+}
