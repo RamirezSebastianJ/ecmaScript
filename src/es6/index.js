@@ -94,3 +94,60 @@ const a = 'b';
 a = 'a'; //return error
 */
 console.log(a);
+
+//====================Objetos (Asignacion)
+//Antes de ECMAScript6
+let name = 'oscar';
+let age = 32;
+
+obj = { name: name, age: age};
+
+console.log(obj);
+
+//ECMAScript6
+obj2 = { name, age};
+console.log(obj2);
+
+//====================Arround Function
+const names = [
+    {
+        name: 'Juan', 'age': 21
+    },
+    {
+        name: 'Sebastian', 'age': 30
+    }
+]
+
+//Antes de ECMAScript6. Funciones anonimas
+let listOfNames = names.map(function(item) {
+    console.log(item.name);
+});
+
+//ECMAScript6 Arround Function
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (names, age, country) => {
+    
+};
+
+const listOfNames4 = name => {
+
+};
+
+const square = num => num*num;
+
+
+//====================Promesas
+const helloPromise = () => {
+    return new Promise((resolve, reject) => {
+        if(true){
+            resolve("Perfect!")
+        }else{
+            reject("Ups!!!");
+        }
+    })
+};
+
+helloPromise()
+    .then(response => console.log(response))
+    .catch(error => console.log(error));
