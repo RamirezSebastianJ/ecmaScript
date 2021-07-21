@@ -151,3 +151,39 @@ const helloPromise = () => {
 helloPromise()
     .then(response => console.log(response))
     .catch(error => console.log(error));
+
+
+//============================ POO
+class calculator{
+    constructor() {
+        this.valueA =0;
+        this.valueB = 0;
+    }
+    sum(valueA, valueB) {
+        this.valueA = valueA;
+        this.valueB = valueB;
+        return this.valueA+this.valueB;
+    }
+}
+
+const calc = new calculator();
+console.log(calc.sum(2,4));
+
+//Trabajo con modulos
+import hello from './modules';
+console.log(hello());
+
+//====================Generators
+function* helloWorld() {
+    if(true){
+        yield 'hello';
+    }
+    if(true){
+        yield 'world';
+    }
+}
+
+const generatorHello = helloWorld();
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
+console.log(generatorHello.next().value);
